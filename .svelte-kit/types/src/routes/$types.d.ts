@@ -10,7 +10,7 @@ type EnsureDefined<T> = T extends null | undefined ? {} : T;
 type OptionalUnion<U extends Record<string, any>, A extends keyof U = U extends U ? keyof U : never> = U extends unknown ? { [P in Exclude<A, keyof U>]?: never } & U : never;
 export type Snapshot<T = any> = Kit.Snapshot<T>;
 type PageParentData = EnsureDefined<LayoutData>;
-type LayoutRouteId = RouteId | "/" | "/(auth)/login" | "/(auth)/password/forgot" | "/(auth)/password/info" | "/(auth)/password/reset" | "/(auth)/register" | "/about" | "/blogs" | "/blogs/[...slug]" | "/blogs/first" | "/blogs/second" | "/blogs/third" | "/marketing/[[lang]]" | "/products" | "/products/[productId=integer]" | "/products/[productId=integer]/items" | "/products/[productId=integer]/items/[itemId]" | null
+type LayoutRouteId = RouteId | "/" | "/(fullScreenLayout)/(auth)/password/full" | "/(productLayout)/(auth)/login" | "/(productLayout)/(auth)/password/forgot" | "/(productLayout)/(auth)/password/info" | "/(productLayout)/(auth)/password/reset" | "/(productLayout)/(auth)/register" | "/(productLayout)/about" | "/(productLayout)/blogs" | "/(productLayout)/blogs/[...slug]" | "/(productLayout)/blogs/first" | "/(productLayout)/blogs/second" | "/(productLayout)/blogs/third" | "/(productLayout)/home" | "/(productLayout)/marketing/[[lang]]" | "/(productLayout)/products" | "/(productLayout)/products/[productId=integer]" | "/(productLayout)/products/[productId=integer]/items" | "/(productLayout)/products/[productId=integer]/items/[itemId]" | null
 type LayoutParams = RouteParams & { slug?: string,lang?: string,productId?: string,itemId?: string }
 type LayoutParentData = EnsureDefined<{}>;
 

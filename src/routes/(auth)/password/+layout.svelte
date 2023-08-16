@@ -1,3 +1,0 @@
-<header>
-    Password manager
-</header>

@@ -21,29 +21,35 @@ export const nodes = [
 	() => import('./nodes/17'),
 	() => import('./nodes/18'),
 	() => import('./nodes/19'),
-	() => import('./nodes/20')
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22'),
+	() => import('./nodes/23'),
+	() => import('./nodes/24')
 ];
 
 export const server_loads = [];
 
 export const dictionary = {
-		"/": [4],
-		"/about": [10],
-		"/blogs": [11],
-		"/blogs/first": [13],
-		"/blogs/second": [14],
-		"/blogs/third": [15],
-		"/blogs/[...slug]": [12],
-		"/(auth)/login": [5,[2]],
-		"/marketing/[[lang]]": [16],
-		"/(auth)/password/forgot": [6,[2,3]],
-		"/(auth)/password/info": [7,[2,3]],
-		"/(auth)/password/reset": [8,[2,3]],
-		"/products": [17],
-		"/products/[productId=integer]": [18],
-		"/products/[productId=integer]/items": [19],
-		"/products/[productId=integer]/items/[itemId]": [20],
-		"/(auth)/register": [9,[2]]
+		"/": [6],
+		"/(productLayout)/about": [13,[3]],
+		"/(productLayout)/blogs": [14,[3]],
+		"/(productLayout)/blogs/first": [16,[3]],
+		"/(productLayout)/blogs/second": [17,[3]],
+		"/(productLayout)/blogs/third": [18,[3]],
+		"/(productLayout)/blogs/[...slug]": [15,[3]],
+		"/(productLayout)/home": [19,[3]],
+		"/(productLayout)/(auth)/login": [8,[3,4]],
+		"/(productLayout)/marketing/[[lang]]": [20,[3]],
+		"/(productLayout)/(auth)/password/forgot": [9,[3,4,5]],
+		"/(fullScreenLayout)/(auth)/password/full": [7,[2]],
+		"/(productLayout)/(auth)/password/info": [10,[3,4,5]],
+		"/(productLayout)/(auth)/password/reset": [11,[3,4,5]],
+		"/(productLayout)/products": [21,[3]],
+		"/(productLayout)/products/[productId=integer]": [22,[3]],
+		"/(productLayout)/products/[productId=integer]/items": [23,[3]],
+		"/(productLayout)/products/[productId=integer]/items/[itemId]": [24,[3]],
+		"/(productLayout)/(auth)/register": [12,[3,4]]
 	};
 
 export const hooks = {
