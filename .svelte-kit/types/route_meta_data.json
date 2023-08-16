@@ -1,0 +1,21 @@
+{
+	"/(auth)": [],
+	"/": [],
+	"/about": [],
+	"/blogs": [],
+	"/blogs/first": [],
+	"/blogs/second": [],
+	"/blogs/third": [],
+	"/blogs/[...slug]": [],
+	"/(auth)/login": [],
+	"/marketing/[[lang]]": [],
+	"/(auth)/password": [],
+	"/(auth)/password/forgot": [],
+	"/(auth)/password/info": [],
+	"/(auth)/password/reset": [],
+	"/products": [],
+	"/products/[productId=integer]": [],
+	"/products/[productId=integer]/items": [],
+	"/products/[productId=integer]/items/[itemId]": [],
+	"/(auth)/register": []
+}
