@@ -1,9 +1,18 @@
 {
 	"/(productLayout)/(auth)": [],
 	"/(productLayout)": [],
-	"/(fullScreenLayout)": [],
+	"/(DifferentPurposeLayout)": [],
 	"/": [],
 	"/(productLayout)/about": [],
+	"/api": [
+		"src/routes/api/+server.ts"
+	],
+	"/api/comments": [
+		"src/routes/api/comments/+server.ts"
+	],
+	"/api/comments/[commentId]": [
+		"src/routes/api/comments/[commentId]/+server.ts"
+	],
 	"/(productLayout)/blogs": [],
 	"/(productLayout)/blogs/first": [],
 	"/(productLayout)/blogs/second": [],
@@ -14,10 +23,13 @@
 	"/(productLayout)/marketing/[[lang]]": [],
 	"/(productLayout)/(auth)/password": [],
 	"/(productLayout)/(auth)/password/forgot": [],
-	"/(fullScreenLayout)/(auth)/password/full": [],
+	"/(DifferentPurposeLayout)/(auth)/password/full": [],
 	"/(productLayout)/(auth)/password/info": [],
 	"/(productLayout)/(auth)/password/reset": [],
-	"/(productLayout)/products": [],
+	"/(productLayout)/(auth)/password/verify": [],
+	"/(productLayout)/products": [
+		"src/routes/(productLayout)/products/+page.ts"
+	],
 	"/(productLayout)/products/[productId=integer]": [],
 	"/(productLayout)/products/[productId=integer]/items": [],
 	"/(productLayout)/products/[productId=integer]/items/[itemId]": [],

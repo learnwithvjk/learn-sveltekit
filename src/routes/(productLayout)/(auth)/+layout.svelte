@@ -17,5 +17,8 @@
         <li>
             <a href="/password/forgot"> Password forgot</a>
         </li>
+        <li>
+            <a href="/password/verify"> Password verify</a>
+        </li>
     </ul>
 </footer>

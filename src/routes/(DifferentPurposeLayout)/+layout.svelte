@@ -1,6 +1,6 @@
 
 <header>
-    Full Screen Layout
+    Different Purpose Layout
 </header>
 
 <main>

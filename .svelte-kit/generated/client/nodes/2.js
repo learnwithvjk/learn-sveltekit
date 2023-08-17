@@ -1,1 +1,1 @@
-export { default as component } from "../../../../src/routes/(fullScreenLayout)/+layout.svelte";
+export { default as component } from "../../../../src/routes/(DifferentPurposeLayout)/+layout.svelte";
